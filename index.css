@@ -490,3 +490,19 @@ footer {
 .footer-info {
     margin: 5%;
 }
+
+.scroll-discover {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.scroll-item {
+    padding: 15px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    color: #5D5D5D;
+    text-decoration: none;
+}
+
