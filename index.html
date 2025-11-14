@@ -13,10 +13,24 @@
 
 
     <body>
-        <header>
-            <img src="assets/Keithston_icon.png" alt="Keithston-icon" id="icon">
-            <img src="assets/menu.png" alt="Menu-icon" id="menu-burger">
-            
+        <!-- Overlay pour fermer le menu -->
+        <div class="menu-overlay"></div>
+
+        <header class="header">
+            <div class="header-container">
+                <img src="assets/Keithston_icon.png" alt="Keithston-icon" id="icon">
+                <nav class="nav">
+                    <a href="#accueil" class="active">Accueil</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#services">Services</a>
+                </nav>
+                <button class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </header>
 
         <div id="fullpage">
@@ -310,21 +324,22 @@
                     <div class="footer-icon">
                         <img src="assets/Keithston_icon.png" alt="Keithston-icon">
                     </div>
-                    <p>Suivez nous</p>
-                    <div id="social-media">
-                        <div class="social-btn">
-                            <img src="assets/Facebook.png" alt="Facebook">
+                    <div id="social">
+                        <p id="suivre">Suivez-nous</p>
+                        <div id="social-media">
+                            <div class="social-btn">
+                                <img src="assets/Facebook.png" alt="Facebook">
+                            </div>
+                            <div class="social-btn">
+                                <img src="assets/Pinterest.png" alt="Pinterest">
+                            </div>
+                            <div class="social-btn">
+                                <img src="assets/Whatsapp.png" alt="Whatsapp">
+                            </div>
+                            <div class="social-btn">
+                                    <img src="assets/Instagram.png" alt="Instagram">
+                            </div>
                         </div>
-                        <div class="social-btn">
-                            <img src="assets/Pinterest.png" alt="Pinterest">
-                        </div>
-                        <div class="social-btn">
-                            <img src="assets/Whatsapp.png" alt="Whatsapp">
-                        </div>
-                        <div class="social-btn">
-                                <img src="assets/Instagram.png" alt="Instagram">
-                        </div>
-                        
                     </div>
                 </section>
                 <section class="footer-info-section">
@@ -367,5 +382,7 @@
                 <p class="footer-rights">© 2025 Coda Bakery.<br>Tous droits réservés</p>
             </footer>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
